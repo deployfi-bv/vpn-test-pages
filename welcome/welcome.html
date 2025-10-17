@@ -1,75 +1,142 @@
 <!doctype html>
 <html lang="en">
     <head>
-
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4C4QLSPB4"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-F4C4QLSPB4');
         </script>
 
         <meta charset="utf-8" />
         <title>Vpn Test Welcome Guide</title>
-        <meta
-            content="Vpn test welcome guide for how to use this extension"
-            name="description"
-        />
-        <meta content="vpn test, google chrome extension" name="keywords" />
+        <meta name="description" content="A step-by-step guide on how to install and use the VPN Test extension to check geolocation and IP address." />
+        <meta name="keywords" content="vpn test, vpn, chrome extension, proxy test, ip check" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://vpn-test.ovh/welcome/welcome.html">
+        <meta property="og:title" content="Vpn Test Welcome Guide">
+        <meta property="og:description" content="A step-by-step guide on how to install and use the VPN Test extension to check geolocation and IP address.">
+        <meta property="og:image" content="https://vpn-test.ovh/welcome/assets/images/content/ext/step-2.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://vpn-test.ovh/welcome/welcome.html">
+        <meta property="twitter:title" content="Vpn Test Welcome Guide">
+        <meta property="twitter:description" content="A step-by-step guide on how to install and use the VPN Test extension to check geolocation and IP address.">
+        <meta property="twitter:image" content="https://vpn-test.ovh/welcome/assets/images/content/ext/step-2.png">
+
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="crossorigin"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Raleway:wght@400;700&amp;display=swap"
-        />
-        <link rel="stylesheet" href="./assets/css/mainibrn8.min.css" />
-        <link rel="stylesheet" href="./assets/css/ext-welcomeibrn8.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" />
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+        <link rel="stylesheet" href="./assets/css/modern-welcome.css" />
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to Install and Use the VPN Test Extension",
+          "description": "A step-by-step guide on how to pin and use the VPN Test extension in the Chrome browser to test VPN endpoint geolocation and copy the IP address.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Step 1: Pin the Extension",
+              "text": "Click the puzzle piece (1) in the top right of your browser. Then, click the little pin (2) next to the extension.",
+              "image": "https://vpn-test.ovh/welcome/assets/images/content/ext/step-1.png",
+              "url": "https://vpn-test.ovh/welcome/welcome.html#step1"
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Step 2: Use the Extension",
+              "text": "Open the extension (3) to test VPN endpoint geolocation and copy IP to the clipboard.",
+              "image": "https://vpn-test.ovh/welcome/assets/images/content/ext/step-2.png",
+              "url": "https://vpn-test.ovh/welcome/welcome.html#step2"
+            }
+          ]
+        }
+        </script>
     </head>
 
-    <body class="page ext-welcome">
-        <div class="page__content">
-            <div class="container">
-                <div class="ext-welcome__container">
-                    <div class="ext-welcome__title">
-                        <h1>Vpn Test has been installed</h1>
-                    </div>
-                    <div class="ext-welcome__steps">
-                        <div class="ext-welcome__step">
-                            <p>
-                                Click the puzzle piece (1) in the top right
-                                of your browser. Then, click the little pin
-                                (2) next to the extension:
-                            </p>
-                            <img
-                                class="ext-welcome__image"
-                                src="./assets/images/content/ext/step-1.png"
-                                alt="step 1"
-                            />
-                        </div>
-                        <div class="ext-welcome__step">
-                            <p>
-                                Open the extension (3) to test VPN endpoint geolocation and copy IP to the clipboard:
-                            </p>
-                            <img
-                                class="ext-welcome__image"
-                                src="./assets/images/content/ext/step-2.png"
-                                alt="step 2"
-                            />
-                        </div>
+    <body class="page ext-welcome bg-gray-100 font-sans leading-normal tracking-normal">
+        <header class="page__header">
+            <div class="container mx-auto">
+                <div class="ext-welcome__title text-center py-12">
+                    <h1 class="text-5xl font-bold text-gray-800">Vpn Test has been installed</h1>
+                    <p class="text-xl text-gray-600 mt-4">Here is a quick guide on how to use it.</p>
+                </div>
+            </div>
+        </header>
+        
+        <main class="page__content">
+            <div class="container mx-auto">
+                <div class="ext-welcome__container bg-white rounded-lg shadow-xl p-8 md:p-12 mb-12">
+                    <div class="flex flex-wrap -mx-4">
+                        <section id="step1" class="w-full md:w-1/2 px-4 mb-8">
+                            <div class="ext-welcome__step text-center">
+                                <h2 class="text-3xl font-bold text-gray-800 mb-4">Step 1: Pin the Extension</h2>
+                                <p class="text-gray-600 mb-4">
+                                    Click the puzzle piece in the top right of your browser. Then, click the pin icon next to the extension.
+                                </p>
+                                <img
+                                    class="ext-welcome__image rounded-lg shadow-md mx-auto"
+                                    src="./assets/images/content/ext/step-1.png"
+                                    alt="Step 1: Click the puzzle icon, then click the pin icon to pin the extension."
+                                />
+                            </div>
+                        </section>
+                        <section id="step2" class="w-full md:w-1/2 px-4 mb-8">
+                            <div class="ext-welcome__step text-center">
+                                <h2 class="text-3xl font-bold text-gray-800 mb-4">Step 2: Use the Extension</h2>
+                                <p class="text-gray-600 mb-4">
+                                    Open the extension to test VPN endpoint geolocation and copy the IP to the clipboard.
+                                </p>
+                                <img
+                                    class="ext-welcome__image rounded-lg shadow-md mx-auto"
+                                    src="./assets/images/content/ext/step-2.png"
+                                    alt="Step 2: Open the extension to test geolocation and copy the IP address."
+                                />
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-        </div>
-        <script src="./assets/js/mainibrn8.min.js"></script>
+
+            <!-- Banner Section -->
+            <section class="bg-blue-600 border-b py-16">
+                <div class="container max-w-5xl mx-auto m-8">
+                    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+                        Proxy Solution for Android
+                    </h2>
+                    <div class="w-full mb-4">
+                        <div class="h-1 mx-auto bg-white w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                    </div>
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full sm:w-1/2 p-6 text-center">
+                            <p class="text-gray-200 mb-8 text-lg">
+                                Want to use proxy connections only inside your Android browser? Here is our solution.
+                            </p>
+                            <a href="https://play.google.com/store/apps/details?id=org.verlibr.esko"
+                               class="mx-auto lg:mx-0 hover:underline transform transition hover:scale-105 duration-300 ease-in-out">
+                                <img src="boldui-assets/elements/buttons/googleplay.png" alt="Get it on Google Play" class="mx-auto">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto text-center">
+                <p><a href="../privacy_policy.htm" class="text-gray-400 hover:text-white">Privacy Policy</a></p>
+            </div>
+        </footer>
+
 
     </body>
 </html>
